@@ -1,0 +1,221 @@
+body {
+	
+}
+
+nav {
+	height: 500px;
+	background-image: url(../images/Archive/seoul.jpg);
+}
+.responsive-nav {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	justify-content:space-between;
+	color: white;
+
+}
+.menu .logo img {
+	height: 40px;
+	width: 40px;
+	margin-left: 20px;
+}
+.menu .inscription {
+	display: flex;
+}
+.menu .inscription p {
+	padding-left:39px;
+	padding-right: 10px;
+	
+
+}
+.menu .inscription .text-border {
+	border: 2px solid white;
+	margin-bottom: 4px;
+	border-radius: 4px;
+	padding-left: 15px;
+	margin-top: 4px;
+}
+.banner {
+
+width: 100%;
+height: 500px;
+position: absolute;
+background-image:url(../images/background.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: absolute;
+position:relative;
+display: flex;
+justify-content: center;
+/*positionne au milieu horizontalement*/
+align-items: center;
+/*postionne au milieu veticalement */
+color: white;
+}
+.banner .btn-primary{
+  color:white;
+  letter-spacing: 2px;
+  background-color: rgba(255,255,255,0.4);
+  /*border:2px solid #6AD58B;*/
+  /*box-shadow: 3px 3px 4px black;*/
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  border-radius: 2px;
+  position:relative;left: 30px;
+}
+
+.banner-content {
+	text-align: center;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+
+}
+.banner-content h1{
+	font-size: 2.5em;
+}
+.banner {
+	height: 380px;
+
+}
+.nav-footer {
+	
+	height: 70px;
+	display: flex;
+	justify-content:center;
+	background-color: rgba(0,0,0,0.6);
+	color:black;
+	align-items:center;
+}
+ .nav-footer p {
+ 	display:inline-block;
+ }
+.btn-red {
+  color:white;
+  letter-spacing: 2px;
+  background-color: rgb(245,67,64);
+  /*border:2px solid #6AD58B;*/
+  /*box-shadow: 3px 3px 4px black;*/
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+			/*VOUS EN REVER ?*/
+.content-reve {
+	/*background-color: rgb(233,235,232);*/
+
+}
+.photo-text {
+	margin-top: 150px;
+	margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-between;
+    justify-content:center;
+    align-items:center;
+	
+
+}
+ .article-photo {
+background-image: url(../images/Archive/hamac.jpg);
+background-size: cover;
+width: 48%;
+height: 300px;
+display: flex;
+justify-content:center;
+align-items:center;
+margin-right: 96px;
+}
+.article-text {
+	display: flex;
+	flex-direction:column;
+}
+.article-photo p {
+	color:white;
+	font-size: 2.14em;
+}
+.article-text h2 {
+	font-size:1.3em;
+	color:rgb(68,72,74);
+}
+.article-text .condition {
+	font-size: 0.8em;
+
+}
+
+			/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px){
+	
+	.menu {
+		display: none;
+	}
+	.responsive-nav {
+		display: flex;
+		height: 70px;
+		position:top;
+		background-color: white;
+	}
+	.responsive-nav i {
+		color: red;
+		margin-left: 20px;
+		margin-top:20px;
+	}
+	.logo-navigation {
+		display: flex;
+		flex-direction:row;
+		align-items:space-between;
+
+		
+	}
+	.logotoutseul i {
+	color: rgb(245,67,74);
+	}
+	
+	.logo-navigation .airbnb-logo img {
+		height: 30%;
+		width: 30%;
+		margin-left: 110%;
+		margin-top:16px;
+		
+	
+	}
+	.nav-footer {
+		background-color: transparent;
+	}
+	.bar-recherche {
+		display: none;
+	}
+	.photo-text {
+		display: flex;
+		flex-wrap:wrap;
+	}
+
+	.article-photo{
+		margin:0;
+		display:flex;
+		justify-content:center;
+		width: 100%;
+		margin:10px;
+		
+	}
+	/*.btn-red {
+		margin-left:10px;
+	}*/
+	.article-text {
+		text-align: center;
+	}
+	.banner .btn-primary {
+		position:relative;left: auto;
+	}
+}
